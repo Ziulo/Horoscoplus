@@ -1,0 +1,428 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fuente1;
+    src: url(../fuentes/Lora-Regular.ttf);
+}
+
+@font-face {
+    font-family: fuente2;
+    src: url(../fuentes/RobotoSlab-Regular.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
+
+* { box-sizing: border-box; }
+
+#subheader {
+  width: 100%;
+  font-size: 18px;
+  background-color: #f0bc04;
+  height: 40px;
+  margin-top: 100px;
+  border-color: black;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+#subheader p {
+    display: none; /* Important to give the content a width */
+
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+ 
+    /* Add the animation */
+
+    animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+    margin-top: 6px;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+body{
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: 100%;
+
+
+}
+
+#total{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    /*background-color: rgb(153,83,148);*/
+    background-color: #830484;
+    top:0px;
+    font-family: fuente2;
+    font-size: 15px;
+    z-index: 10;
+}
+
+#headerprincipal{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    /*background-color: rgb(153,83,148);*/
+    background-color: #830484;
+    top:0px;
+    border-color: black;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+}
+
+#logo{
+    margin-left: 10px;
+    height: 90px;
+ 
+}
+
+li{
+    padding: 2%;
+    background-color: #ece4b4;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+nav{
+    display: none;
+    margin-right: 100px;
+    margin-top: 40px;
+    height: 40px;
+    flex-direction: row;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+    color: black;
+}
+
+.simple{
+    text-decoration: none;
+}
+
+#grupo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: fuente1;
+    font-size: 15px;
+}
+
+#centro{
+    display: flex;
+    background-color: #cbbce3;
+    width: 70%;
+    height: 1750px;
+}
+
+#titulo4{
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+}
+
+hr{
+    margin-top: 4px;
+    margin-left: 3%;
+    width: 94%;
+}
+
+#organizador{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+}
+
+video{
+    width: 100%;
+    padding: 30px;
+}
+
+#juego{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#bola{
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+#aviso{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left:;
+}
+
+#advertencia{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#aviso p{
+    background-color:lightgreen;
+    padding: 2%;
+}
+
+#advertencia p{
+    font-size: small;
+    background-color: #f04c44;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: black;
+}
+
+#formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;
+}
+
+#margen{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ece4b4;
+}
+
+#centrado{
+    align: center;
+}
+
+aside{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20%;
+    background-color: #ece4b4;
+    margin-top: 140px;
+
+
+}
+.ajustable{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 170px;
+    background-color: #f0bc04;
+    bottom:0%;
+
+    font-family: fuente2;
+    font-size: 15px;
+}
+
+#footersuperior{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-color: black;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: #f0bc04;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 58px;
+
+}
+
+#contacto p{
+    margin-right: 10px;
+}
+
+
+
+#iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 60px;
+    color: #f0bc04;
+    
+    
+}
+
+.redsocial{
+    background-color: white;
+    padding: 10%;
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+#footerinferior{
+    background-color: #830484;
+    width: 100%;
+    height: 55px;
+    margin-top: 50px;
+    border-color: black;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#footerinferior div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#footerinferior div p {
+padding: 6px;
+text-align: center;
+color: #f0bc04;
+}
+
+#morado:hover{
+    background-color: #c80477;
+}
+
+#azul:hover{
+    background-color: #1da1f2;
+}
+
+#amarillo:hover{
+    background-color: #f8f020;
+}
+
+#rojo:hover{
+    background-color: #ff4500;
+}
+
+nav ul li:hover{
+    background-color: #f0bc04;
+}
+
+@media only screen and (min-width: 800px) {
+    #subheader p {
+        display: block;
+    }
+    nav {
+        display: flex;
+    }
+    aside {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #headerprincipal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+   #logo{ 
+    width: 100%;
+   }
+   nav {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+    margin-right: 0px;
+    margin-left: 0px;
+   
+    }
+    #subheader{
+       height: 60px;
+    }
+    #nav ul li:hover{
+      background-color: #830484;
+    }
+    #grupo{
+        flex-wrap: wrap;
+    }
+    #formulario{
+        width: 100%;
+    }
+    #juego{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #footerinferior{
+        height: 80px;
+   }
+}
+
+@media only screen and (max-width: 875px) {
+    #footerinferior{
+       margin-top: 15px;
+   }
+   #footersuperior{
+    height: 150px;
+    justify-content: center;
+    }
+}
+
+
