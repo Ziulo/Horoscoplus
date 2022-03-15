@@ -186,9 +186,10 @@ footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 170px;
+    height: fit-content;
     background-color: #f0bc04;
     bottom:0%;
+
     font-family: fuente2;
     font-size: 15px;
 }
@@ -198,6 +199,8 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    
+    height: fit-content;
     border-color: black;
     border-style: solid;
     border-left: none;
@@ -244,8 +247,7 @@ footer{
 #footerinferior{
     background-color: #830484;
     width: 100%;
-    height: 55px;
-    margin-top: 50px;
+    height: fit-content;
     border-color: black;
     border-style: solid;
     border-left: none;
@@ -294,6 +296,9 @@ nav ul li:hover{
     nav {
         display: flex;
     }
+    aside {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -310,35 +315,45 @@ nav ul li:hover{
     width: 100%;
    }
    nav {
-    display: block;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 18px;
-    margin-right: 0px;
-    margin-left: 0px;
+        display: flex;
+        margin-top: 18px;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+        padding-right: 40px;
+
    
+
+    }
+    nav ul{
+        margin-left: 0;
+    }
+
+    nav ul li{
+        margin-right: 5px;
     }
     #subheader{
        height: 60px;
     }
-    #nav ul li:hover{
-      background-color: #830484;
-    }
-    #seccion{
-        flex-wrap: wrap;
-    }
-    #principal{
-        width: 100%;
-    }
-    #secundaria{
-        width: 100%;
+    article{
+        width: 90%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #footerinferior{
-        height: 80px;
+    #contacto{
+
+        height: fit-content;
+        flex-direction: column;
    }
+   #footerinferior div{
+
+    height: fit-content;
+    flex-direction: column;
+    }
+    #footersuperior{
+        height: fit-content;
+    }
 }
 
 @media only screen and (max-width: 875px) {
@@ -346,7 +361,22 @@ nav ul li:hover{
        margin-top: 15px;
    }
    #footersuperior{
-    height: 150px;
+    height: fit-content;
     justify-content: center;
     }
 }
+
+@media only screen and (max-width: 520px) {
+    #iconos{
+        margin-right: 0;
+    }
+    .redsocial{
+        margin-left: 0;
+        margin: 5px;
+      
+        
+    }
+
+}
+
+
